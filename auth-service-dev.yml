@@ -2,6 +2,21 @@ db:
   url: jdbc:postgresql://localhost:5432/user_db
   username: 'admin1234'
   password: "admin1234"
+
+spring:
+  datasource:
+    url: ${db.url}
+    username: ${db.username}
+    password: ${db.password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
 keycloak:
   server-url: http://localhost:8070
   realm: ""
