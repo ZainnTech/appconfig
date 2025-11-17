@@ -16,6 +16,6 @@ spring:
 
 
 keystore:
-  classpath: certs/keystore.jks
+  classpath: certs/keystore-backend.jks
   password: Admin$123
   alias: mykey
