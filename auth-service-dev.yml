@@ -15,9 +15,5 @@ spring:
     show-sql: true
 
 
-keycloak:
-  server-url: http://localhost:8070
-  realm: ""
-  client-id: "auth-service"
-  client-secret: ""
-  jwt-set-uri: ${keycloak.server-url}/realms/${keycloak.realm}/protocol/openid-connect/certs
+keystore:
+  password: Admin$123
