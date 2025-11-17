@@ -15,7 +15,11 @@ spring:
     show-sql: true
 
 
-keystore:
+keystore-backend:
   classpath: certs/keystore-backend.jks
   password: Admin$123
+  alias: mykey
+keystore-client:
+  classpath: certs/keystore-client.jks
+  password: Client$123
   alias: mykey
