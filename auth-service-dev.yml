@@ -18,4 +18,4 @@ spring:
 keystore:
   classpath: classpath:certs/keystore.jks
   password: ${keystore.password}
-  keyAlias: mykey
+  alias: mykey
