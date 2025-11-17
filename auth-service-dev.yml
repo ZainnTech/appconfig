@@ -16,4 +16,6 @@ spring:
 
 
 keystore:
-  password: Admin$123
+  classpath: classpath:certs/keystore.jks
+  password: ${keystore.password}
+  keyAlias: mykey
