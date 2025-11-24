@@ -3,4 +3,4 @@ custom:
   pageSize: 30
   configEndDateDays: 7
   tenantMaxAttempts: 1000
-  limitUser:1
+  limitUser: 1
