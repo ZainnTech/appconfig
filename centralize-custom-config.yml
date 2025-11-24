@@ -2,4 +2,4 @@ custom:
   max-attempts: 5
   pageSize: 30
   configEndDateDays: 7
-  tanant_maxAttempts: 1000
+  tenant_maxAttempts: 1000
