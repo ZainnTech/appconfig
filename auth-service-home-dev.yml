@@ -1,1 +1,32 @@
+db:
+  url: jdbc:postgresql://localhost:5432/user_db
+  username: 'admin1234'
+  password: 'admin1234'
 
+spring:
+  datasource:
+    url: ${db.url}
+    username: ${db.username}
+    password: ${db.password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+
+keystore-backend:
+  classpath: certs/keystore-backend.jks
+  password: Admin$123
+  alias: mykey
+keystore-client:
+  classpath: certs/keystore-client.jks
+  password: Client$123
+  alias: mykey
+
+
+keycloak:
+  url: http://localhost:8070/
+  realm: master
+  clientId: backend-keycloak
+  clientSecret: rbucYYk9B4AqjCjH29AGEZP118TTrhln
