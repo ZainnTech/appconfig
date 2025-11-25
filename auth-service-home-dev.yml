@@ -29,4 +29,4 @@ keycloak:
   url: http://localhost:8070/
   realm: master
   clientId: backend-keycloak
-  clientSecret: rbucYYk9B4AqjCjH29AGEZP118TTrhln
+  clientSecret: 6CoM0S9m8vt0QGNISu89Q26CJpTJl2y2
