@@ -27,6 +27,6 @@ keystore-client:
 
 keycloak:
   url: http://localhost:8070/
-  realm: master
-  clientId: backend-keycloak
-  clientSecret: 6CoM0S9m8vt0QGNISu89Q26CJpTJl2y2
+  realm: zain-soft-technology
+  clientId: inventory-client-credentials
+  clientSecret: Xl4fIwSDP5X7yT1TDH9Yw4XipOofrq7l
