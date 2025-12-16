@@ -27,6 +27,6 @@ keystore-client:
 
 keycloak:
   url: http://localhost:8070/
-  realm: master
-  clientId: backend-keycloak
-  clientSecret: rbucYYk9B4AqjCjH29AGEZP118TTrhln
+  realm: cafe-realm
+  clientId: user-client
+  clientSecret: 7oGgYF6i2E4AvasDOU9eVugH829wBXsx
