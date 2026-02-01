@@ -27,6 +27,7 @@ keystore-client:
 
 keycloak:
   url: http://localhost:8070/
+  clientCrendentialId: admin-cli
   realm: cafe-app
   clientId: auth-service
   clientSecret: TN1v9g8ViGAMrCU1SqneDXPB3yb1Pt9s
