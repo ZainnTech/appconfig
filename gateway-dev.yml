@@ -6,6 +6,7 @@ management:
         include: '*'
 
 # routing configuration using yml spring cloud gateway
+#  spring.cloud:
 #    gateway:
 #      server:
 #        webflux:
