@@ -1,9 +1,10 @@
 
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
-        include: '*'
+        include: refresh,health
+
 
 # routing configuration using yml spring cloud gateway
 #  spring.cloud:
