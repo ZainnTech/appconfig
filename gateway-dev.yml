@@ -31,8 +31,8 @@ management:
 api:
   whitelist:
     paths:
-      - "/sys/auth/users/login"
-      - "/sys/auth/users/register"
+      - "/users/login"
+      - "/users/register"
 
 springdoc:
   swagger-ui:
