@@ -27,10 +27,12 @@ management:
 #              - Path=/eureka/**
 
 
+
 api:
   whitelist:
-  - "/sys/auth/users/login"
-  - "/sys/auth/users/register"
+    paths:
+      - "/sys/auth/users/login"
+      - "/sys/auth/users/register"
 
 springdoc:
   swagger-ui:
