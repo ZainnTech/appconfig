@@ -1,0 +1,42 @@
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: '*'
+
+# routing configuration using yml spring cloud gateway
+#    gateway:
+#      server:
+#        webflux:
+#          routes:
+#            - id: auth-service
+#              uri: lb://AUTH-SERVICE
+#              predicates:
+#                - Path=/users/**
+#            - id: eureka-server
+#              uri: lb://EUREKA-SERVER
+#              predicates:
+#              - Path=/eureka/main
+#              filters:
+#                - SetPath=/
+#            - id: eureka-server-static
+#              uri: lb://EUREKA-SERVER
+#              predicates:
+#              - Path=/eureka/**
+
+
+api:
+  whitelist:
+  - "/sys/auth/users/login"
+  - "/sys/auth/users/register"
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: API Auth Service
+        url: /api-auth-service/v3/api-docs
+      - name: Order Service
+        url: /order-service/v3/api-docs
+      - name: Auth Service
+        url: /auth-service/v3/api-docs
